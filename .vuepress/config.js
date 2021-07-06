@@ -2,7 +2,7 @@ module.exports = {
   "title": "lemon",
   "description": "追番是最快乐的事情",
   "dest": "public",
-  "base": "/blog/",
+  "base": "./",
   "locales": {
     '/': {
       lang: 'zh-CN'
