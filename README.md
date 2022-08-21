@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: lemon
-tagline: 雪之下雪乃
+heroText: Peng Blog
+tagline: 一个被程序员生涯耽误的优秀厨子
 heroTextStyle: {
   color: '#fff'
 }
@@ -15,10 +15,7 @@ heroTextStyle: {
 #   borderRadius: '1rem',
 # }
 # heroImage: ''
-bgImage: '/gd01.jpg'
-bgImageStyle: {
-  height: '1000px',
-}
+
 isShowTitleInHome: false
 
 ---

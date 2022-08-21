@@ -1,8 +1,8 @@
 module.exports = {
-  "title": "lemon",
-  "description": "追番是最快乐的事情",
+  "title": "饭团也有春天",
+  "description": "",
   "dest": "public",
-  "base": "./",
+  "base": "/blog/",
   "locales": {
     '/': {
       lang: 'zh-CN'
@@ -13,7 +13,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/favicon.ico"
+        "href": "https://www.zpzpup.com/assets/image/favicon.ico"
       }
     ],
     [
@@ -23,48 +23,31 @@ module.exports = {
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
     ],
-    // 百度统计
-    ["script", { src: "/assets/js/jquery-1.11.3.min.js" }],
-    ["script", { src: "/assets/js/bodyClick.js" }],
-    ["script", {}, `var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?1dd6a922ba031e44241e70062c507bda";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();`]
+    ["script", { src: "/assets/js/bodyClick.js" }]
   ],
-  "theme": "reco",
+  "theme": "jabinblog",
   "themeConfig": {
     "mode": 'dark',
     "noFoundPageByTencent": true,
+    "logo": 'https://www.zpzpup.com/assets/image/avatar.png',
     "valineConfig": {
       appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
       appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
     },
     "nav": [
       {
-        "text": "我的主页",
+        "text": "随意一点的主页",
         "link": "/",
-        "icon": "reco-home",
+        "icon": "reco-home"
       },
       {
-        text: "项目",
-        icon: 'iconfont icon-tools',
-        items: [
-          { text: '暂时未放上来', link: '/', icon: "" },
-        ]
+        "text": "莫名其妙的时间轴",
+        "link": "/timeline/",
+        "icon": "reco-date"
       },
       {
-        "text": "时间轴",
-        "link": '/timeline/',
-        "icon": "reco-date",
-        "href": "http://zpzpup.com/assets/image/home.svg"
-      },
-      {
-        "text": "分类",
-        "icon": "",
-        "href": "http://zpzpup.com/assets/image/home.svg",
+        "text": "很厉害的文章",
+        "icon": "reco-document",
         "items": [
           {
             "text": "七杂八杂",
@@ -72,7 +55,11 @@ module.exports = {
           },
           {
             "text": "Vue3.0",
-            "link": "/docs/Vue/ref"
+            "link": "/docs/vue/ref"
+          },
+          {
+            "text": "Nuxt",
+            "link": "/docs/nuxt/introduction"
           },
           {
             "text": "吃吃吃",
@@ -80,27 +67,21 @@ module.exports = {
           }
         ]
       },
-      { text: "留言板", link: "/docs/others/message", icon: "reco-message" },
       {
         "text": "联系我吧",
         "icon": "reco-message",
         "items": [
           {
             "text": "GitHub",
-            "link": "/",
-            "icon": "reco-github",
-            "href": "http://zpzpup.com/assets/image/home.svg"
+            "link": "https://github.com/JabinPeng",
+            "icon": "reco-github"
           }
         ]
       }
     ],
-
-    // subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
-    // sidebar: "auto",//所有页面自动生成侧边栏
-    // author: "lemon",
-
     "sidebar": {
       "/docs/jottings/": [
+        // "vueBuild",
         "mobile",
         "Git",
         "HarmonyOS",
@@ -143,13 +124,24 @@ module.exports = {
               'v-bind'
           ]
         }
+      ],
+      "/docs/Nuxt/": [
+        {
+          "title": "Nuxt",
+          "collapsable": false,
+          "children": [
+              'introduction',
+              'asyncData',
+              'context'
+          ]
+        }
       ]
     },
     "type": "blog",
     "blogConfig": {
       "tag": {
         "location": 3,
-        "text": "普通的标签"
+        "text": "无关紧要的小标签"
       }
     },
     "friendLink": [
@@ -157,23 +149,29 @@ module.exports = {
       //   "title": "饭团也有春天",
       //   "desc": "没有梦想，也能远方",
       //   "email": "690996726@qq.com",
-      //   "link": "www.zpzpup.com/blog"
+      //   "link": "https://www.zpzpup.com/blog"
       // },
       {
-        title: '欢迎各位入驻哦',
-        desc: '你来了，世界便亮了',
-        logo: "https://xiaolan35.gitee.io/medias/logo.gif",
-        link: '/'
+        "title": "Lucifer",
+        "desc": "Everything can be expected in the future.",
+        "email": "2050180797@qq.com",
+        "logo": "https://nightliuguoxing-github-io.vercel.app/img/avatar.jpg",
+        "link": "https://love.liuguoxing.top"
       },
+      {
+        "title": "午后南杂",
+        "desc": "一款简洁而优雅的 vuepress 博客 & 文档 主题。",
+        "email": "无",
+        "link": "https://vuepress-theme-reco.recoluan.com/"
+      }
     ],
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
-    "author": "lemon",
-    "authorAvatar": "/avatar.png",
-    "record": "暂无",//备案号
-    "startYear": "2019" // 项目开始时间
-    
+    "author": "Jabin",
+    "authorAvatar": "https://www.zpzpup.com/assets/image/avatar.png",
+    "record": "鄂ICP备18004957号-2",
+    "startYear": "2018"
   },
   "configureWebpack": {
     "resolve": {
@@ -183,23 +181,18 @@ module.exports = {
     }
   },
   "markdown": {
-    "lineNumbers": true //代码显示行号
+    "lineNumbers": true
   },
   "plugins": [
-    require("./packages/copy/index.js"),
-
-    // 首页女神图
     ["sakura", {
-      num: 30,  // 默认数量
+      num: 10,  // 默认数量
       show: true,
       zIndex: 2,
       img: {
         replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
-        httpUrl: 'http://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
+        httpUrl: 'https://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
       }
     }],
-
-    // 彩带
     ["ribbon-animation", {
       size: 90,   // 默认数据
       opacity: 0.3,  //  透明度
@@ -229,42 +222,17 @@ module.exports = {
       ribbonShow: false, //  点击彩带  true显示  false为不显示
       ribbonAnimationShow: true  // 滑动彩带
     }],
-
-    
-    // 播放器
-    [
-      'meting', {
-        meting: {
-          auto:'http://music.163.com/#/song?id=28018269'
-        },
-        aplayer: {
-        lrcType: 3, // 显示歌词
-        autoplay: true, //自动播放
-        // {url:'http://music.163.com/#/song?id=536622304'},
-        // {url:'http://music.163.com/#/song?id=512376195'}
-        }
-      }
-    ],
-    // 点击爆炸的彩带效果
-    ["cursor-effects",{
-      size: 3,                    // size of the particle, default: 2
-      shape: ['circle'],  // shape of the particle, default: 'star'
-      zIndex: 999999999           // z-index property of the canvas, default: 999999999
-    }],
     ['go-top'],
     [
       "dynamic-title",
       {
-        showIcon: "/favicon.ico",
-        showText: "(/≧▽≦/)",
-        hideIcon: "/favicon.ico",
-        hideText: "别走呀",
+        showIcon: "https://www.zpzpup.com/assets/image/favicon.ico",
+        showText: "欢迎回来 O(∩_∩)O~",
+        hideIcon: "https://www.zpzpup.com/assets/image/favicon.ico",
+        hideText: "失联中。。。快回来~",
         recoverTime: 2000
       }
     ],
-    // 看板娘插件
-    //  ['z16', 'blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto',
-    //   'koharu', 'izumi', 'shizuku', 'wanko', 'miku'],
     [
       'vuepress-plugin-helper-live2d', {
         // 是否开启控制台日志打印(default: false)
@@ -273,9 +241,9 @@ module.exports = {
           // 是否启用(关闭请设置为false)(default: true)
           enable: true,
           // 模型名称(default: hibiki)
-          model: 'hibiki',
+          model: 'koharu',
           display: {
-            position: "right", // 显示位置：left/right(default: 'right')
+            position: "left", // 显示位置：left/right(default: 'right')
             width: 135, // 模型的长度(default: 135)
             height: 300, // 模型的高度(default: 300)
             hOffset: 65, //  水平偏移(default: 65)
