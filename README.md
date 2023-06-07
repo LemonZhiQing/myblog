@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: Peng Blog
-tagline: 一个被程序员生涯耽误的优秀厨子
+heroText: lemon
+tagline: 一个被代码耽误的优秀厨子
 heroTextStyle: {
   color: '#fff'
 }
