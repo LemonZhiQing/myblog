@@ -36,7 +36,7 @@ module.exports = {
     },
     "nav": [
       {
-        "text": "随意一点的主页",
+        "text": "一点的主页",
         "link": "/",
         "icon": "reco-home"
       },
